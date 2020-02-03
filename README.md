@@ -31,6 +31,14 @@ Thats it ...Nothing else . You have to go to the view command on thw window of t
 PASSWORD :  **nahhhhhahahaa**😂🤣😂
 
 
+# LEVEL 1 ➠ LEVEL 2
+
+Once ur logged in, the level hint will appear in the middle of the server ie, **There is nothing on the webpage** . After viewing the source page of that level it is showing that it is containing a png file. To open that I have add /files after the main urls which ur working on it. After viewing that site a new page appears that is **Index of /files** it contains two file ... one is the **pixal.png** file and other is the **user.txt** file. 
+After opening the user.txt file it is showing the password for the next level....
+
+PASSWORD : **@#$%^&*(&^%%$**
+
+
 
 
 
