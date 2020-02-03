@@ -16,6 +16,10 @@ URL:      http://natas0.natas.labs.overthewire.org
 
 # LEVEL 0
 
+Once we are logged in, the level hint will appear in the middle of the screen ie, it is showing that **you can find the password for the next level on this page** Thats it..Nothing else. And you have to find the password for entering into the next level. After searching the web page thoroughly I have gone to the view page source ... then I got the password showing that the password for the next level is ****@@##%$$%^&&**(&^%%$ like this.......
+
+**What u want....password** try it and get it....
+
 
 
 
