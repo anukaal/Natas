@@ -22,4 +22,15 @@ Once we are logged in, the level hint will appear in the middle of the screen ie
 
 
 
+# LEVEL 0 -- LEVEL 1
+
+
+Once we are logged in, the level hint will appear in the middle of the screen ie, it is showing that **You can find the password for the next level on this page, but rightclicking has been blocked!** 
+Thats it ...Nothing else . You have to go to the view command on thw window of the web page there it will show a developer option , there u will get view source click on it..it will open the source code of that page and finally u will get the password -- **@#$%^&*((&^%$#** that will help you to get enter into the next level...
+
+PASSWORD :  **nahhhhhahahaa**
+
+
+
+
 
