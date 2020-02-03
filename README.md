@@ -51,6 +51,11 @@ After opening this file it will show the password of the next level.
 
 PASSWORD : **@#$%^&*()(*&^%**
 
+# LEVEL 3 ➠ LEVEL 4
+
+Once ur logged in, the level hint will appear in the middle of the server ie, **Access disallowed. You are visiting from "http://natas4.natas.labs.overthewire.org/" while authorized users should come only from "http://natas5.natas.labs.overthewire.org/"** ..
+So after seeing that I have searched in google, it shows that we have to change the HTTP Referer to natas5 using a web security tools . Then only we can get access to the page where the password id stored.
+
 
 
 
