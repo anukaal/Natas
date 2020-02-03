@@ -39,6 +39,21 @@ After opening the user.txt file it is showing the password for the next level...
 PASSWORD : **@#$%^&*(&^%%$**
 
 
+# LEVEL 2 ➠ LEVEL 3
+
+Once ur logged in, the level hint will appear in the middle of the server ie, **There is nothing on the webpage** Again...in this level the same hint is showing .
+**“Not even Google will find it this time…”** is our hint here. If you have some idea of HTML, and about web servers, then you would know that the files it’s referring too is **robots.txt**. When u go to that url using **robots.txt** at last it will display 
+User-agent: *\
+Disallow: /s3cr3t/\
+Then, so the robots.txt is disallowing crawlers to find /s3cr3t/. Let’s go ahead and add it to the end of the webpage, which should look something like this: http://natas3.natas.labs.overthewire.org/s3cr3t/. 
+After clicking on the above link it will open a page named **Index of /s3cr3t/** and it is showing a file named **user.txt**.
+After opening this file it will show the password of the next level.
+
+PASSWORD : **@#$%^&*()(*&^%**
+
+
+
+
 
 
 
