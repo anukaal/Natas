@@ -79,6 +79,16 @@ Then I go to that webpae who include that secret.inc there I found a secret key 
 PASSWORD : **@#$%^&&^**
 
 
+# LEVEL 6 ➠ LEVEL 7
+
+Once ur logged in, the level hint will appear in the middle of the server ie, **only two thing one is Home and other is About**.
+After viewing the source page of that page it is displaying extra thing ie, a type of hint **hint: password for webuser natas8 is in /etc/natas_webpass/natas8**.
+After clicking on the home link then it is showing a another web apge in which it is showing same Home and About link and other than that it is displaying that it is **the front page**.
+Then I try that to edit the URL of the home page ie **http://natas7.natas.labs.overthewire.org/index.php?page=home**
+And I have edited the urls remove the home and paste this hint **/etc/natas_webpass/natas8** after page and searched it. Then I have find the password for the next Level...
+
+PASSWORD : **@#$%^&&^%**
+
 
 
 
