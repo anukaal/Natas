@@ -61,6 +61,14 @@ Then it will not refresh the page automatically, you have to go to reference set
 PASSWORD : **@#$$%%^^&**
 
 
+# LEVEL 4 ➠ LEVEL 5
+
+Once ur logged in, the level hint will appear in the middle of the server ie, **Access disallowed .You are not logged in.**
+So after seeing that I reached to the view page source there I find nothing ..Just It is showing the same thing .. No file , no hidden file , nothing..
+Then I have gone to inspect Element, theere I have seen in the Header section that there is one cookies and it is showing that **loggedin=0** And when I Edited this cookies to **loggedin=1** and then i send it and after that I checked in the response section there the page is loaded and the password for the next level is displayed..
+
+PASSWORD : **@#$$#$%^&**
+
 
 
 
