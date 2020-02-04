@@ -70,6 +70,15 @@ Then I have gone to inspect Element, theere I have seen in the Header section th
 PASSWORD : **@#$$#$%^&**
 
 
+# LEVEL 5 ➠ LEVEL 6
+
+Once ur logged in, the level hint will appear in the middle of the server ie, **Input secret** And There it is showing view page source.
+After clicking the page source it is showing a php file and It seems that the PHP is including a link to a file stored on the webpage **/includes/secret.inc**.
+Then I go to that webpae who include that secret.inc there I found a secret key , after pasting it and after submitting it the password for the next level is displayed...
+
+PASSWORD : **@#$%^&&^**
+
+
 
 
 
