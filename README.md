@@ -55,6 +55,10 @@ PASSWORD : **@#$%^&*()(*&^%**
 
 Once ur logged in, the level hint will appear in the middle of the server ie, **Access disallowed. You are visiting from "http://natas4.natas.labs.overthewire.org/" while authorized users should come only from "http://natas5.natas.labs.overthewire.org/"** ..
 So after seeing that I have searched in google, it shows that we have to change the HTTP Referer to natas5 using a web security tools . Then only we can get access to the page where the password id stored.
+But Using the inspect element , u can go to network settings and add a Referer and edit it to natas5 and send it.
+Then it will not refresh the page automatically, you have to go to reference setting and then it will show the page with index.php page wuth natas5 and what u can see is that the password is here....
+
+PASSWORD : **@#$$%%^^&**
 
 
 
