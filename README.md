@@ -112,7 +112,13 @@ For this level, it seems that the query is looking for words containing our inpu
 **Lets understand it more Deeply...😁😁**
 
 If we type in the word “password” then the **passthru** command in the **PHP** script will look like so: **grep -i password dictionary.txt**. Seeing the way that key is **encapsulated(too much of English)** 😂 in quotes, and there is no input filtering, we can assume that we are able to enter special characters.
-After that We can use the **;** command separator, which will allow us to use 2 commands in one line. And we will also use the # comment command, which will comment out the rest of the text following the symbol.
+After that We can use the **;** command separator, which will allow us to use 2 commands in one line. And we will also use the **#** comment command, which will comment out the rest of the text following the symbol.
+
+So, in the input field we will type **; cat /etc/natas_webpass/natas10 #** which in turn will run the **passthru** command as such; **grep -i ; cat /etc/natas_webpass/natas10 #**, commenting out and removing dictionary.txt.
+After enterning this command U will get the password for the next level.
+**What ELSE YOU WANT....**
+
+PASSWORD : **@#$%^&^%$**
 
 
 
