@@ -95,11 +95,25 @@ PASSWORD : **@#$%^&&^%**
 Once ur logged in, the level hint will appear in the middle of the server ie, **Input Secret** thats it..
 After Viewing the Source code which is displayed in the webpage, It seems that the secret code we need is encoded. Looking though the PHP code we can see that the “secret” entered is converted from bin to hex, reversed, and then base64 encoded.
 So for us to get the “secret” we have to reverse engineer this. 
-So I have gone in online php editor and use this command :**echo base64_decode(strrev(hex2bin('3d3d516343746d4d6d6c315669563362')));** Then, We can get the secret key from the encoded key by base64 decoding it, reversing the string, and converting the hex back to binary.
+
+So I have gone in online php editor and use this command :
+**echo base64_decode(strrev(hex2bin('3d3d516343746d4d6d6c315669563362')));**
+Then, We can get the secret key from the encoded key by base64 decoding it, reversing the string, and converting the hex back to binary.
 If you have done correctly, you should get the secret key **@#$%^&^**. Let’s enter that and see if it works.
 Then You should find the password for the next Level....
 
 PASSWORD : **@#$%^&^%**
+
+# LEVEL 8 ➠ LEVEL 9
+
+Once ur logged in, the level hint appear in the middle of the sever ie, **Find words containing** .
+For this level, it seems that the query is looking for words containing our input. Let’s view the sourcecode , It is showing that Source code We can find a PHP file , it is telling that From the way “key” is being used in the PHP script, we can probably insert arbitrary code.
+
+**Lets understand it more Deeply...😁😁**
+
+If we type in the word “password” then the **passthru** command in the **PHP** script will look like so: **grep -i password dictionary.txt**. Seeing the way that key is **encapsulated(too much of English)** 😂 in quotes, and there is no input filtering, we can assume that we are able to enter special characters.
+After that We can use the **;** command separator, which will allow us to use 2 commands in one line. And we will also use the # comment command, which will comment out the rest of the text following the symbol.
+
 
 
 
