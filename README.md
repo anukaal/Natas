@@ -90,6 +90,19 @@ And I have edited the urls remove the home and paste this hint **/etc/natas_webp
 PASSWORD : **@#$%^&&^%**
 
 
+# LEVEL 7 ➠ LEVEL 8
+
+Once ur logged in, the level hint will appear in the middle of the server ie, **Input Secret** thats it..
+After Viewing the Source code which is displayed in the webpage, It seems that the secret code we need is encoded. Looking though the PHP code we can see that the “secret” entered is converted from bin to hex, reversed, and then base64 encoded.
+So for us to get the “secret” we have to reverse engineer this. 
+So I have gone in online php editor and use this command :**echo base64_decode(strrev(hex2bin('3d3d516343746d4d6d6c315669563362')));** Then, We can get the secret key from the encoded key by base64 decoding it, reversing the string, and converting the hex back to binary.
+If you have done correctly, you should get the secret key **@#$%^&^**. Let’s enter that and see if it works.
+Then You should find the password for the next Level....
+
+PASSWORD : **@#$%^&^%**
+
+
+
 
 
 
