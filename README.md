@@ -121,6 +121,14 @@ After enterning this command U will get the password for the next level.
 PASSWORD : **@#$%^&^%$**
 
 
+# LEVEL 9 ➠ LEVEL 10
+
+Once ur logged in, the level hint appear in the middle of the sever ie, **For security reasons, we now filter on certain characters** And we have to find the words containing our input. 
+**This level is similar to the previous level**, so let’s view the sourcecode and see what we can find in the PHP script.
+Okay, so the script seems to be the same as level 9’s, but now they are filtering the **;** and **&** command.
+
+
+
 
 
 
