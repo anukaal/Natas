@@ -123,10 +123,11 @@ PASSWORD : **@#$%^&^%$**
 
 # LEVEL 9 ➠ LEVEL 10
 
-Once ur logged in, the level hint appear in the middle of the sever ie, **For security reasons, we now filter on certain characters** And we have to find the words containing our input. 
+Once ur logged in, the level hint appear in the middle of the sever ie, **For security reasons, we now filter on certain characters** And we have to find the words containing our input.
 **This level is similar to the previous level**, so let’s view the sourcecode and see what we can find in the PHP script.
 Okay, so the script seems to be the same as level 9’s, but now they are filtering the **;** and **&** command.
 Seems they still haven’t fixed the way “key” is storing input. So we can exploit this the same way we did in 9; but this time just using regular expressions.
+
 Let’s go ahead and enter **.* /etc/natas_webpass/natas11 #** inside the query. By entering **.***, we tell grep to search for all, while ignoring case, and match it to **etc/natas_webpass/natas11**. The **#** command, comments out dictionary.txt, preventing any errors from occurring.
 After entering this command U will get the password for the next level.
 
@@ -137,7 +138,23 @@ PASSWORD : **@#$%^&&^**
 
 # LEVEL 10 ➠ LEVEL 11
 
-Once 
+Once ur logged in, the level hint appear in the middle of the server ie, **Cookies are protected with XOR encryption**.
+So it seems like the cookies are protected with a **XOR Encryption**… interesting! Let’s go ahead and grab the XOR Encrypted cookie that the site is using. 
+So Go to the inspect Element and there go to the network window and refresh the page and then U can get the cookies which is stored under header.
+
+In this case, it would be: **Original_Data XOR KEY = Encrypted_Data**.
+
+Thus to get the Key we do the following: **Original_Data XOR Encrypted_Data = KEY**, since we already are provided with the Original_Data and Encrypted_Data. 
+Let’s fire up PHP and write the following script to **reverse engineer** the key and I uploaded the script in the NATAS repository Under **Level11.PHP file.(CHECK IT)**.
+
+And we will get the Key Output of **@##$$#@@#(KEY🔐 which is in repeated form)**. Okay, great. So let’s go back and edit our code, and replace the **$key** with our newly found key, and also edit the showpassword to **yes**.
+Once we run the new PHP script we should get an output of our cookie:**@#$%^&^%^&**
+
+With this new cookie, let’s go back to Header section and edit the cookies ine with the new cookies which we have get and submit it to the page. If done correctly, we should get the password.....😂
+
+**BEWARE....TOO BIG APPROACH😆😆😆** 
+
+
 
 
 
