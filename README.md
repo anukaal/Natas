@@ -126,7 +126,13 @@ PASSWORD : **@#$%^&^%$**
 Once ur logged in, the level hint appear in the middle of the sever ie, **For security reasons, we now filter on certain characters** And we have to find the words containing our input. 
 **This level is similar to the previous level**, so let’s view the sourcecode and see what we can find in the PHP script.
 Okay, so the script seems to be the same as level 9’s, but now they are filtering the **;** and **&** command.
+Seems they still haven’t fixed the way “key” is storing input. So we can exploit this the same way we did in 9; but this time just using regular expressions.
+Let’s go ahead and enter **.* /etc/natas_webpass/natas11 #** inside the query. By entering **.***, we tell grep to search for all, while ignoring case, and match it to **etc/natas_webpass/natas11**. The **#** command, comments out dictionary.txt, preventing any errors from occurring.
+After entering this command U will get the password for the next level.
 
+**And password is here**
+
+PASSWORD : **@#$%^&&^**
 
 
 
