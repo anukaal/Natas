@@ -136,7 +136,7 @@ After entering this command U will get the password for the next level.
 PASSWORD : **@#$%^&&^**
 
 
-# LEVEL 10 ➠ LEVEL 11
+# LEVEL 10 ➠ LEVEL 11 (**BEWARE....TOO BIG APPROACH😆😆😆** )
 
 Once ur logged in, the level hint appear in the middle of the server ie, **Cookies are protected with XOR encryption**.
 So it seems like the cookies are protected with a **XOR Encryption**… interesting! Let’s go ahead and grab the XOR Encrypted cookie that the site is using. 
@@ -147,12 +147,14 @@ In this case, it would be: **Original_Data XOR KEY = Encrypted_Data**.
 Thus to get the Key we do the following: **Original_Data XOR Encrypted_Data = KEY**, since we already are provided with the Original_Data and Encrypted_Data. 
 Let’s fire up PHP and write the following script to **reverse engineer** the key and I uploaded the script in the NATAS repository Under **Level11.PHP file.(CHECK IT)**.
 
-And we will get the Key Output of **@##$$#@@#(KEY🔐 which is in repeated form)**. Okay, great. So let’s go back and edit our code, and replace the **$key** with our newly found key, and also edit the showpassword to **yes**.
+And we will get the Key Output of **@##$$#@@#(KEY🔐 which is in repeated form)**. Okay, great. So let’s go back and edit our code which I have uploaded Under NATAS Repository , and replace the **$key** with our newly found key, and also edit the showpassword to **yes**.
 Once we run the new PHP script we should get an output of our cookie:**@#$%^&^%^&**
 
 With this new cookie, let’s go back to Header section and edit the cookies ine with the new cookies which we have get and submit it to the page. If done correctly, we should get the password.....😂
 
-**BEWARE....TOO BIG APPROACH😆😆😆** 
+PASSWORD : **@#$%^&&^%**
+
+
 
 
 
