@@ -155,6 +155,11 @@ With this new cookie, let’s go back to Header section and edit the cookies ine
 PASSWORD : **@#$%^&&^%**
 
 
+# LEVEL 11 ➠ LEVEL 12
+
+Once ur logged in, the level hint appear in the middle of the server ie, **Choose a JPEG to upload (max 1KB)** that means we have to upload a JPEG file which have to be of size not more than 1KB.
+Let’s see what the source code does before we decide on how to exploit this.
+
 
 
 
