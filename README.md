@@ -2,7 +2,7 @@
 
 # Natas teaches the basics of serverside web-security.
 
-Each level of natas consists of its own BOX located at **http://natasX.natas.labs.overthewire.org** where X is the level number. There is no SSH login.
+Each level of natas consists of its own **BOX** located at **http://natasX.natas.labs.overthewire.org** where X is the level number. There is no SSH login.
 
 **To access a level, enter the username for that level (e.g. natas0 for level 0) and its password.**
 
@@ -157,11 +157,23 @@ PASSWORD : **@#$%^&&^%**
 
 # LEVEL 11 ➠ LEVEL 12
 
-Once ur logged in, the level hint appear in the middle of the server ie, **Choose a JPEG to upload (max 1KB)** that means we have to upload a JPEG file which have to be of size not more than 1KB.
+Once ur logged in, the level hint appear in the middle of the server ie, **Choose a JPEG to upload (max 1KB)** that means we have to upload a JPEG file which have to be of size not more than **1KB**.
 Let’s see what the source code does before we decide on how to exploit this.
 
-It seems as if the code is taking the uploaded file, creating a random name and path, and adding a preset extension - which we can assume is **.jpeg**.
-The first thing that I can think of, off the top of my head is an **Unrestricted File Upload**. So let’s go ahead and test for this vulnerability. We can begin by creating a simple PHP Shell that will echo back the contents of **/etc/natas_webpass/natas13**.
+It seems as if the code is taking the uploaded file, creating a random name and path, and adding a preset extension  which we can assume is **.jpeg**.
+The first thing that I can think of, off the top of my head is an **Unrestricted File Upload**. So let’s go ahead and test for this **vulnerability**. We can begin by creating a simple **PHP Shell** that will echo back the contents of **/etc/natas_webpass/natas13**.
+
+
+So first run the **HTML** file which I have taken from the source code of the main page of **NATAS 12** and run on my Web browser. After that, I have to upload the file which I have written in PHP ie, cat natas 13.
+You should see something along the lines of **“The file upload/yh33kxvyt8.php has been uploaded”** come up.
+Anf after clicking the above link , password of the next level will displayed...
+
+**Note(I have uploaded the PHP file and HTML file that is used in this level for reference )**
+
+PASSWORD : **@#$%^&^%$#**
+
+
+
 
 
 
