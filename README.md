@@ -160,6 +160,9 @@ PASSWORD : **@#$%^&&^%**
 Once ur logged in, the level hint appear in the middle of the server ie, **Choose a JPEG to upload (max 1KB)** that means we have to upload a JPEG file which have to be of size not more than 1KB.
 Let’s see what the source code does before we decide on how to exploit this.
 
+It seems as if the code is taking the uploaded file, creating a random name and path, and adding a preset extension - which we can assume is **.jpeg**.
+The first thing that I can think of, off the top of my head is an **Unrestricted File Upload**. So let’s go ahead and test for this vulnerability. We can begin by creating a simple PHP Shell that will echo back the contents of **/etc/natas_webpass/natas13**.
+
 
 
 
