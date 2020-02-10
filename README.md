@@ -1,6 +1,6 @@
-# NATAS   😊😊
+# NATAS   :mag_right:
 
-# Natas teaches the basics of serverside web-security.
+## Natas teaches the basics of serverside web-security.
 
 Each level of natas consists of its own **BOX** located at **http://natasX.natas.labs.overthewire.org** where X is the level number. There is no SSH login.
 
@@ -14,15 +14,12 @@ Username: natas0\
 Password: natas0\
 URL:      http://natas0.natas.labs.overthewire.org
 
-# LEVEL 0
+## LEVEL 0
 
 Once we are logged in, the level hint will appear in the middle of the screen ie, it is showing that **you can find the password for the next level on this page** Thats it..Nothing else. And you have to find the password for entering into the next level. After searching the web page thoroughly I have gone to the view page source ... then I got the password showing that the password for the next level is ****@@##%$$%^&&**(&^%%$ like this.......
 
-**What u want....password** try it and get it....😂🤣
 
-
-
-# LEVEL 0 ➠ LEVEL 1
+## LEVEL 0 ➠ LEVEL 1
 
 
 Once we are logged in, the level hint will appear in the middle of the screen ie, it is showing that **You can find the password for the next level on this page, but rightclicking has been blocked!** 
@@ -31,7 +28,7 @@ Thats it ...Nothing else . You have to go to the view command on thw window of t
 PASSWORD :  **nahhhhhahahaa**😂🤣😂
 
 
-# LEVEL 1 ➠ LEVEL 2
+## LEVEL 1 ➠ LEVEL 2
 
 Once ur logged in, the level hint will appear in the middle of the server ie, **There is nothing on the webpage** . After viewing the source page of that level it is showing that it is containing a png file. To open that I have add /files after the main urls which ur working on it. After viewing that site a new page appears that is **Index of /files** it contains two file ... one is the **pixel.png** file and other is the **user.txt** file. 
 After opening the user.txt file it is showing the password for the next level....
@@ -39,7 +36,7 @@ After opening the user.txt file it is showing the password for the next level...
 PASSWORD : **@#$%^&*(&^%%$**
 
 
-# LEVEL 2 ➠ LEVEL 3
+## LEVEL 2 ➠ LEVEL 3
 
 Once ur logged in, the level hint will appear in the middle of the server ie, **There is nothing on the webpage** Again...in this level the same hint is showing .
 **“Not even Google will find it this time…”** is our hint here. If you have some idea of HTML, and about web servers, then you would know that the files it’s referring too is **robots.txt**. When u go to that url using **robots.txt** at last it will display 
@@ -51,9 +48,9 @@ After opening this file it will show the password of the next level.
 
 PASSWORD : **@#$%^&*()(*&^%**
 
-# LEVEL 3 ➠ LEVEL 4
+## LEVEL 3 ➠ LEVEL 4
 
-Once ur logged in, the level hint will appear in the middle of the server ie, **Access disallowed. You are visiting from "http://natas4.natas.labs.overthewire.org/" while authorized users should come only from "http://natas5.natas.labs.overthewire.org/"** ..
+Once you're logged in, the level hint will appear in the middle of the server ie, **Access denied. You are visiting from "http://natas4.natas.labs.overthewire.org/" while authorized users should come only from "http://natas5.natas.labs.overthewire.org/"** ..
 So after seeing that I have searched in google, it shows that we have to change the HTTP Referer to natas5 using a web security tools . Then only we can get access to the page where the password id stored.
 But Using the inspect element , u can go to network settings and add a Referer and edit it to natas5 and send it.
 Then it will not refresh the page automatically, you have to go to reference setting and then it will show the page with index.php page wuth natas5 and what u can see is that the password is here....
@@ -61,7 +58,7 @@ Then it will not refresh the page automatically, you have to go to reference set
 PASSWORD : **@#$$%%^^&**
 
 
-# LEVEL 4 ➠ LEVEL 5
+## LEVEL 4 ➠ LEVEL 5
 
 Once ur logged in, the level hint will appear in the middle of the server ie, **Access disallowed .You are not logged in.**
 So after seeing that I reached to the view page source there I find nothing ..Just It is showing the same thing .. No file , no hidden file , nothing..
@@ -90,7 +87,7 @@ And I have edited the urls remove the home and paste this hint **/etc/natas_webp
 PASSWORD : **@#$%^&&^%**
 
 
-# LEVEL 7 ➠ LEVEL 8
+## LEVEL 7 ➠ LEVEL 8
 
 Once ur logged in, the level hint will appear in the middle of the server ie, **Input Secret** thats it..
 After Viewing the Source code which is displayed in the webpage, It seems that the secret code we need is encoded. Looking though the PHP code we can see that the “secret” entered is converted from bin to hex, reversed, and then base64 encoded.
@@ -104,12 +101,10 @@ Then You should find the password for the next Level....
 
 PASSWORD : **@#$%^&^%**
 
-# LEVEL 8 ➠ LEVEL 9
+## LEVEL 8 ➠ LEVEL 9
 
 Once ur logged in, the level hint appear in the middle of the sever ie, **Find words containing** .
 For this level, it seems that the query is looking for words containing our input. Let’s view the sourcecode , It is showing that Source code We can find a PHP file , it is telling that From the way “key” is being used in the PHP script, we can probably insert arbitrary code.
-
-**Lets understand it more Deeply...😁😁**
 
 If we type in the word “password” then the **passthru** command in the **PHP** script will look like so: **grep -i password dictionary.txt**. Seeing the way that key is **encapsulated(too much of English)** 😂 in quotes, and there is no input filtering, we can assume that we are able to enter special characters.
 After that We can use the **;** command separator, which will allow us to use 2 commands in one line. And we will also use the **#** comment command, which will comment out the rest of the text following the symbol.
@@ -121,9 +116,9 @@ After enterning this command U will get the password for the next level.
 PASSWORD : **@#$%^&^%$**
 
 
-# LEVEL 9 ➠ LEVEL 10
+## LEVEL 9 ➠ LEVEL 10
 
-Once ur logged in, the level hint appear in the middle of the sever ie, **For security reasons, we now filter on certain characters** And we have to find the words containing our input.
+Once you're logged in, the level hint appears in the middle of the sever i.e, **For security reasons, we now filter on certain characters** And we have to find the words containing our input.
 **This level is similar to the previous level**, so let’s view the sourcecode and see what we can find in the PHP script.
 Okay, so the script seems to be the same as level 9’s, but now they are filtering the **;** and **&** command.
 Seems they still haven’t fixed the way “key” is storing input. So we can exploit this the same way we did in 9; but this time just using regular expressions.
@@ -131,12 +126,10 @@ Seems they still haven’t fixed the way “key” is storing input. So we can e
 Let’s go ahead and enter **.* /etc/natas_webpass/natas11 #** inside the query. By entering **.***, we tell grep to search for all, while ignoring case, and match it to **etc/natas_webpass/natas11**. The **#** command, comments out dictionary.txt, preventing any errors from occurring.
 After entering this command U will get the password for the next level.
 
-**And password is here**
-
 PASSWORD : **@#$%^&&^**
 
 
-# LEVEL 10 ➠ LEVEL 11 (**BEWARE....TOO BIG APPROACH😆😆😆** )
+## LEVEL 10 ➠ LEVEL 11 (** The long approach ** )
 
 Once ur logged in, the level hint appear in the middle of the server ie, **Cookies are protected with XOR encryption**.
 So it seems like the cookies are protected with a **XOR Encryption**… interesting! Let’s go ahead and grab the XOR Encrypted cookie that the site is using. 
@@ -155,7 +148,7 @@ With this new cookie, let’s go back to Header section and edit the cookies ine
 PASSWORD : **@#$%^&&^%**
 
 
-# LEVEL 11 ➠ LEVEL 12
+## LEVEL 11 ➠ LEVEL 12
 
 Once ur logged in, the level hint appear in the middle of the server ie, **Choose a JPEG to upload (max 1KB)** that means we have to upload a JPEG file which have to be of size not more than **1KB**.
 Let’s see what the source code does before we decide on how to exploit this.
@@ -173,7 +166,7 @@ Anf after clicking the above link , password of the next level will displayed...
 PASSWORD : **@#$%^&^%$#**
 
 
-# LEVEL 12 ➠ LEVEL 13
+## LEVEL 12 ➠ LEVEL 13
 
 Once ur logged in, the level hint appear in the middle of the server ie, **Choose a  JPEG to Upload (max 1KB){For Security reasons, We now only accept image file!!!!}
 
