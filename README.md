@@ -173,6 +173,13 @@ Anf after clicking the above link , password of the next level will displayed...
 PASSWORD : **@#$%^&^%$#**
 
 
+# LEVEL 12 ➠ LEVEL 13
+
+Once ur logged in, the level hint appear in the middle of the server ie, **Choose a  JPEG to Upload (max 1KB){For Security reasons, We now only accept image file!!!!}
+
+
+
+
 
 
 
