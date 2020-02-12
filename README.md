@@ -173,7 +173,7 @@ Once ur logged in, the level hint appear in the middle of the server ie, **Choos
 This level seems to be the same as 12. The only catch is that the upload accepts image files only. Let’s see source code.
 The source code is similar to 12, but it has some extra addition to it. If you look closely to the IF/ELSE statements, we can see that exif_imagetype is being used.
 
-
+Okay, I’m sure we can exploit this! Let’s go ahead and edit shell.php
 
 
 
