@@ -171,9 +171,9 @@ PASSWORD : **@#$%^&^%$#**
 Once ur logged in, the level hint appear in the middle of the server ie, **Choose a  JPEG to Upload (max 1KB){For Security reasons, We now only accept image file!!!!}
 
 This level seems to be the same as 12. The only catch is that the upload accepts image files only. Let’s see source code.
-The source code is similar to 12, but it has some extra addition to it. If you look closely to the IF/ELSE statements, we can see that exif_imagetype is being used.
+The source code is similar to 12, but it has some extra addition to it. If you look closely to the **IF/ELSE** statements, we can see that **exif_imagetype** is being used.
 
-Okay, I’m sure we can exploit this! Let’s go ahead and edit shell.php hat we used in level 12.This time it has to be pulling the password from Natas14. Also we have to add BMP to the start of the file - this will allow exif_imagetype to read the file as a Bitmap File Image, and will bypass the upload check, allowing our shell.
+Okay, I’m sure we can exploit this! Let’s go ahead and edit shell.php hat we used in level 12.This time it has to be pulling the password from Natas14. Also we have to add **BMP** to the start of the file - this will allow exif_imagetype to read the file as a Bitmap File Image, and will bypass the upload check, allowing our shell.
 
 
 
