@@ -8,18 +8,19 @@ Each level of natas consists of its own **BOX** located at **http://natasX.natas
 
 Each level has access to the password of the next level. Your job is to somehow obtain that next password and level up.
 
-# Start here:
+# :pushpin: Start here: :pushpin:
 
 Username: natas0\
 Password: natas0\
 URL:      http://natas0.natas.labs.overthewire.org
 
-## LEVEL 0
+##  LEVEL :zero:
 
 Once we are logged in, the level hint will appear in the middle of the screen ie, it is showing that **you can find the password for the next level on this page** Thats it..Nothing else. And you have to find the password for entering into the next level. After searching the web page thoroughly I have gone to the view page source ... then I got the password showing that the password for the next level is ****@@##%$$%^&&**(&^%%$ like this.......
 
+:arrow_heading_down: :arrow_double_down: :arrow_double_down: 
 
-## LEVEL 0 ➠ LEVEL 1
+##  LEVEL :zero: :arrow_double_up::arrow_double_up:  LEVEL :one:
 
 
 Once we are logged in, the level hint will appear in the middle of the screen ie, it is showing that **You can find the password for the next level on this page, but rightclicking has been blocked!** 
@@ -27,16 +28,22 @@ Thats it ...Nothing else . You have to go to the view command on thw window of t
 
 PASSWORD :  **nahhhhhahahaa**😂🤣😂
 
+:arrow_heading_down: :arrow_double_down: :arrow_double_down: 
 
-## LEVEL 1 ➠ LEVEL 2
+##  LEVEL :one: :arrow_double_up::arrow_double_up:  LEVEL :two:
 
 Once ur logged in, the level hint will appear in the middle of the server ie, **There is nothing on the webpage** . After viewing the source page of that level it is showing that it is containing a png file. To open that I have add /files after the main urls which ur working on it. After viewing that site a new page appears that is **Index of /files** it contains two file ... one is the **pixel.png** file and other is the **user.txt** file. 
 After opening the user.txt file it is showing the password for the next level....
 
-PASSWORD : **@#$%^&*(&^%%$**
+
+PASSWORD : **@#$%^&*(&^%%$** :eyes: :trollface:
 
 
-## LEVEL 2 ➠ LEVEL 3
+:arrow_heading_down: :arrow_double_down: :arrow_double_down: 
+
+
+
+##  LEVEL :two: :arrow_double_up::arrow_double_up:  LEVEL :three:
 
 Once ur logged in, the level hint will appear in the middle of the server ie, **There is nothing on the webpage** Again...in this level the same hint is showing .
 **“Not even Google will find it this time…”** is our hint here. If you have some idea of HTML, and about web servers, then you would know that the files it’s referring too is **robots.txt**. When u go to that url using **robots.txt** at last it will display 
@@ -46,9 +53,15 @@ Then, so the robots.txt is disallowing crawlers to find /s3cr3t/. Let’s go ahe
 After clicking on the above link it will open a page named **Index of /s3cr3t/** and it is showing a file named **user.txt**.
 After opening this file it will show the password of the next level.
 
-PASSWORD : **@#$%^&*()(*&^%**
+PASSWORD : **@#$%^&*()(*&^%** #:suspect: :trollface:
 
-## LEVEL 3 ➠ LEVEL 4
+
+
+:arrow_heading_down: :arrow_double_down: :arrow_double_down: 
+
+
+
+##  LEVEL :three: :arrow_double_up::arrow_double_up:  LEVEL :four:
 
 Once you're logged in, the level hint will appear in the middle of the server ie, **Access denied. You are visiting from "http://natas4.natas.labs.overthewire.org/" while authorized users should come only from "http://natas5.natas.labs.overthewire.org/"** ..
 So after seeing that I have searched in google, it shows that we have to change the HTTP Referer to natas5 using a web security tools . Then only we can get access to the page where the password id stored.
@@ -58,7 +71,11 @@ Then it will not refresh the page automatically, you have to go to reference set
 PASSWORD : **@#$$%%^^&**
 
 
-## LEVEL 4 ➠ LEVEL 5
+:arrow_heading_down: :arrow_double_down: :arrow_double_down: 
+
+
+
+##  LEVEL :four: :arrow_double_up: LEVEL :five:
 
 Once ur logged in, the level hint will appear in the middle of the server ie, **Access disallowed .You are not logged in.**
 So after seeing that I reached to the view page source there I find nothing ..Just It is showing the same thing .. No file , no hidden file , nothing..
@@ -67,7 +84,11 @@ Then I have gone to inspect Element, theere I have seen in the Header section th
 PASSWORD : **@#$$#$%^&**
 
 
-# LEVEL 5 ➠ LEVEL 6
+:arrow_heading_down: :arrow_double_down: :arrow_double_down: 
+
+
+
+#  LEVEL :five: :arrow_double_up::arrow_double_up: LEVEL :six:
 
 Once ur logged in, the level hint will appear in the middle of the server ie, **Input secret** And There it is showing view page source.
 After clicking the page source it is showing a php file and It seems that the PHP is including a link to a file stored on the webpage **/includes/secret.inc**.
@@ -76,7 +97,11 @@ Then I go to that webpae who include that secret.inc there I found a secret key 
 PASSWORD : **@#$%^&&^**
 
 
-# LEVEL 6 ➠ LEVEL 7
+:arrow_heading_down: :arrow_double_down: :arrow_double_down: 
+
+
+
+# LEVEL :six: :arrow_double_up::arrow_double_up: LEVEL :seven:
 
 Once ur logged in, the level hint will appear in the middle of the server ie, **only two thing one is Home and other is About**.
 After viewing the source page of that page it is displaying extra thing ie, a type of hint **hint: password for webuser natas8 is in /etc/natas_webpass/natas8**.
@@ -87,7 +112,10 @@ And I have edited the urls remove the home and paste this hint **/etc/natas_webp
 PASSWORD : **@#$%^&&^%**
 
 
-## LEVEL 7 ➠ LEVEL 8
+:arrow_heading_down: :arrow_double_down: :arrow_double_down:  
+
+
+## LEVEL :seven: :arrow_double_up::arrow_double_up: LEVEL :eight:
 
 Once ur logged in, the level hint will appear in the middle of the server ie, **Input Secret** thats it..
 After Viewing the Source code which is displayed in the webpage, It seems that the secret code we need is encoded. Looking though the PHP code we can see that the “secret” entered is converted from bin to hex, reversed, and then base64 encoded.
@@ -101,7 +129,12 @@ Then You should find the password for the next Level....
 
 PASSWORD : **@#$%^&^%**
 
-## LEVEL 8 ➠ LEVEL 9
+
+:arrow_heading_down: :arrow_double_down: :arrow_double_down: 
+
+
+## LEVEL :eight: :arrow_double_up::arrow_double_up: LEVEL :nine:
+
 
 Once ur logged in, the level hint appear in the middle of the sever ie, **Find words containing** .
 For this level, it seems that the query is looking for words containing our input. Let’s view the sourcecode , It is showing that Source code We can find a PHP file , it is telling that From the way “key” is being used in the PHP script, we can probably insert arbitrary code.
@@ -116,7 +149,10 @@ After enterning this command U will get the password for the next level.
 PASSWORD : **@#$%^&^%$**
 
 
-## LEVEL 9 ➠ LEVEL 10
+:arrow_heading_down: :arrow_double_down: :arrow_double_down: 
+
+
+## LEVEL :nine:  :arrow_double_up::arrow_double_up: LEVEL :keycap_ten:
 
 Once you're logged in, the level hint appears in the middle of the sever i.e, **For security reasons, we now filter on certain characters** And we have to find the words containing our input.
 **This level is similar to the previous level**, so let’s view the sourcecode and see what we can find in the PHP script.
@@ -129,7 +165,11 @@ After entering this command U will get the password for the next level.
 PASSWORD : **@#$%^&&^**
 
 
-## LEVEL 10 ➠ LEVEL 11 (** The long approach ** )
+:arrow_heading_down: :arrow_double_down: :arrow_double_down: 
+
+
+
+## LEVEL :keycap_ten: :arrow_double_up::arrow_double_up: LEVEL :one::one:  (** The long approach ** )
 
 Once ur logged in, the level hint appear in the middle of the server ie, **Cookies are protected with XOR encryption**.
 So it seems like the cookies are protected with a **XOR Encryption**… interesting! Let’s go ahead and grab the XOR Encrypted cookie that the site is using. 
@@ -148,7 +188,11 @@ With this new cookie, let’s go back to Header section and edit the cookies ine
 PASSWORD : **@#$%^&&^%**
 
 
-## LEVEL 11 ➠ LEVEL 12
+:arrow_heading_down: :arrow_double_down: :arrow_double_down: 
+
+
+
+## LEVEL :one::one: :arrow_double_up::arrow_double_up: LEVEL :one::two:
 
 Once ur logged in, the level hint appear in the middle of the server ie, **Choose a JPEG to upload (max 1KB)** that means we have to upload a JPEG file which have to be of size not more than **1KB**.
 Let’s see what the source code does before we decide on how to exploit this.
@@ -166,7 +210,11 @@ Anf after clicking the above link , password of the next level will displayed...
 PASSWORD : **@#$%^&^%$#**
 
 
-## LEVEL 12 ➠ LEVEL 13
+:arrow_heading_down: :arrow_double_down: :arrow_double_down: 
+
+
+
+## LEVEL :one::two: :arrow_double_up::arrow_double_up: LEVEL :one::three:
 
 Once ur logged in, the level hint appear in the middle of the server ie, **Choose a  JPEG to Upload (max 1KB){For Security reasons, We now only accept image file!!!!}
 
